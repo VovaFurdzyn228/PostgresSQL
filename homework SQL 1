@@ -1,0 +1,37 @@
+HW-1
+1. Створити БД на тему = "Бібліотека".
+
+2. Створити таблицю "книжка" з полями(
+    - назва книги (не null, до 120 символів),
+    - опис (встановити default значення "Опис відсутній"),
+    - дата публікації ( не null, default значення "2818-01-01"),
+    - автор (не null, до 60 символів),
+    - категорія (нe null, до 30 символів)
+)
+
+3. Добавити в цю таблицю 10 записів.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+CREATE TABLE book(
+	name VARCHAR (120) NOT NULL,
+	description VARCHAR(120) DEFAULT 'Опис відсутній',
+	dateOFpublication VARCHAR (120) NOT NULL DEFAULT '2018-01-01',
+	author VARCHAR (60) NOT NULL,
+	category VARCHAR (30) NOT NULL
+	
+);
+
+INSERT INTO book VALUES
+	('Inferno', 'Опис відсутній', '2018-01-01', 'Den Vraven', 'Horrors' );
+
+
+INSERT INTO book VALUES
+	('Inferno', 'Опис відсутній', '2018-01-01', 'Den Vraven', 'Horrors' ),
+	('Angels And Demons', 'Опис відсутній', '2017-03-03', 'Den Braven', 'Fantasy' ),	
+	('last session', 'Опис відсутній', '2018-01-01', 'Ahata Christie', 'Detective' ),	
+	('Da Vinci Code', 'Опис відсутній', '2003-26-10', 'Dan Brown', 'Novel' ),	
+	('Tom Sawyer', 'Опис відсутній', '1876-03-03', 'Mark Twain', 'Fiction' ),	
+	('Prince and the Pauper', 'Опис відсутній', '2016-12-08', 'Mark Twain', 'Adventures' ),	
+	('Romeo et Juliette', 'Опис відсутній', '2001-10-11', 'William Shakespeare', 'Tragedy' ),	
+	('Hamlet', 'Опис відсутній', '1609-01-02', 'William Shakespeare', 'Tragedy, Drama' ),	
+	('Robin Hood', 'Опис відсутній', '13th/14th century AD', 'Walter Scott', 'Adventure' );
