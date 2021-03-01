@@ -1,0 +1,15 @@
+CREATE TABLE book(
+	Id INT NOT NULL PRIMARY KEY,
+	name VARCHAR (120) NOT NULL,
+	description VARCHAR (120),
+	dateOFpublication VARCHAR (120) NOT NULL DEFAULT '2018-01-01',
+	category VARCHAR (30) NOT NULL,
+	isbn CHAR(20) NOT NULL UNIQUE,
+	numberOFpages INT NOT NULL,
+	authorName VARCHAR (45) NOT NULL,
+	authorSurname VARCHAR (45) NOT NULL,
+	mailAuthor  VARCHAR (50) NOT NULL UNIQUE,
+	ageOfTheAuthor INT NOT NULL,
+	authorDateOfBirth INT NOT NULL,
+	authorAwards VARCHAR (120)  NOT NULL
+);
